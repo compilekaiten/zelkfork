@@ -171,6 +171,26 @@
     margin-top: 1em !important;
     opacity: 100;
   }
+  
+  :root #vc-spotify-player {
+    opacity: 0;
+  }
+
+  :root [class*=sidebar] {
+    transition: 250ms ease all !important;
+    width: 10px;
+  }
+
+  :root[class*=sidebar]:hover #vc-spotify-player {
+    transition-delay: 250ms !important;
+    transition: all ease 500ms;
+    opacity: 1;
+  }
+
+  :root [class*=sidebar]:hover {
+    width: 240px;
+    transition-delay: 250ms !important;
+  }
 }
 
 /* FIX FOR MEMBER COUNT; DA THEME-INCOMPATIBLE */
