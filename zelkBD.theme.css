@@ -166,3 +166,183 @@
 .root-8LYsGj[style*="--user-background"] .banner-1YaD3N {
   height: 240px;
 }
+
+/* Customis */
+#vc-spotify-player {
+  --spotify-wave-width: 240px;
+  --spotify-vencord-color: #364270;
+  --spotify-vencord-text: white
+}
+
+@keyframes spotifywave {
+  0% {
+    -webkit-mask-position-x: var(--spotify-wave-width);
+  }
+
+  100% {
+    -webkit-mask-position-x: 0;
+  }
+}
+
+#vc-spotify-player::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  z-index: 1;
+  width: var(--spotify-wave-width);
+  margin-top: -29px;
+  left: 0;
+  background: var(--spotify-vencord-color);
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="240" height="25" viewBox="0 0 284 25"><path d="M283.999 15.2776C228.798 15.2776 211.243 -0.0317305 140.048 -0.000164877C69.0475 -0.000164877 51.2975 15.2776 8.58307e-06 15.2776V24.9998H284C284 24.9998 283.999 18.9392 283.999 15.2776Z"/></svg>');
+  animation: spotifywave 8s linear infinite;
+  animation-delay: 0s;
+  opacity: 1;
+}
+
+#vc-spotify-player#vc-spotify-player  {
+  border-bottom: none;
+  background: var(--spotify-vencord-color);
+}
+
+#vc-spotify-song-title#vc-spotify-song-title,
+.vc-spotify-ellipoverflow.vc-spotify-ellipoverflow,
+.vc-spotify-artist.vc-spotify-artist,
+.vc-spotify-album.vc-spotify-album {
+  color: var(--spotify-vencord-text);
+}
+
+#vc-spotify-player [class*="bar-"] {
+  background: hsl(var(--primary-700-hsl) / 0.3);
+}
+
+#vc-spotify-player [class*="barFill"] {
+  background: hsl(var(--primary-700-hsl) / 0.3);
+}
+
+[class*=wrapper-]:not(:empty) + #vc-spotify-player {
+  margin-top: 27px;
+}
+
+[class*=panels-] [class*=wrapper-] [class*=container-] {
+  border-bottom: none;
+}
+
+/* Buttons Spotify */
+
+button[class*=vc-spotify-button]:not([class*=vc-spotify-repeat]):hover {
+  color: var(--spotify-vencord-color)
+}
+
+[class*=link-][href="/message-requests"], [class*=link-][href="/store"] {
+  display: none;
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1080px) {
+  [class*=wordmarkWindows-], [class*="winButtonMinMax-"], [class*="winButtonClose-"] {
+    opacity: 0%;
+  }
+
+  [class*="winButtonMinMax-"]:hover, [class*="winButtonClose-"]:hover {
+    opacity: 100%;
+  }
+
+  [class*=typeWindows-] {
+    transition: 250ms ease all !important;
+    margin-top: -10px;
+  }
+
+  [class*=typeWindows-]:hover {
+    margin-top: 0px;
+  }
+
+  
+  /* ૮ ˶ᵔ ᵕ ᵔ˶ ა */
+  /* body:before {
+    position: fixed;
+    left: 2px;
+    width: 32px; height: 32px;
+    margin: 16px;
+    z-index: 999;
+    content: url(https://cdn.discordapp.com/emojis/1024751291504791654.gif?size=40&quality=lossless);
+    pointer-events: none;
+  } */
+
+  /* customisation */
+
+  [class*=searchBarComponent-]::before {
+    font-size: 22.5px !important;
+    font-family: Times, 'Times New Roman', serif;
+    content: "(•ิ_•ิ)";
+  }
+
+  [class*=searchBarComponent-] {
+    font-size: 0px !important;
+  }
+
+  [class*=homeIcon] {
+    background-image: url(https://cdn.discordapp.com/emojis/983666916788936734.webp?size=40&quality=lossless);
+    background-size: 100% 100%;
+    width: 40px;
+    height: 40px;
+  }
+
+  [class*=homeIcon] path {
+    display: none;
+  }
+
+  /* 
+    OPTIMISED MEMBER TRAY
+  */
+
+  /* Hide Unil Opened VENCORD */
+  div[id="vc-membercount"] {
+    transition: all ease 250ms;
+    opacity: 0%;
+    pointer-events: none;
+    margin-top: -30px !important; 
+  }
+
+  [class*=membersGroup-] {
+    height: 0px !important;
+    padding: 0% !important;
+  }
+
+  [class*=membersWrap] {
+    min-width: 0px !important;
+    width: 0px;
+  }
+
+  [class*=members] {
+    transition: ease 240ms !important;
+    transition-delay: 250ms !important;
+    min-width: 0px !important;
+    width: 55px;
+
+    will-change: width;
+  }
+
+  [class*=membersWrap]:hover {
+    width:240px
+  }
+
+  [class*=membersWrap]:hover [class*=membersGroup] {
+    transition-delay: 500ms !important;
+    height: 40px !important;
+    padding: 24px 8px 0 16px !important;
+  }
+
+  [class*=membersWrap]:hover [class*=members] {
+    width: 240px;
+  }
+
+  [class*=membersWrap-]:hover div[id="vc-membercount"] {
+    transition-delay: 255ms !important;
+    margin-top: 1em !important;
+    opacity: 100;
+  }
+}
+
+/* FIX FOR MEMBER COUNT; DA THEME-INCOMPATIBLE */
+div[id="vc-membercount"] {
+  margin-bottom: 0px !important;
+}
