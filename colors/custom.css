@@ -172,7 +172,7 @@
     opacity: 100;
   }
   
-  /* hide sidebar patch */
+  /* add hide sidebar patch
   :root #vc-spotify-player {
     opacity: 0;
   }
@@ -192,6 +192,7 @@
     width: 240px;
     transition-delay: 250ms !important;
   }
+   */
 }
 
 /* FIX FOR MEMBER COUNT; DA THEME-INCOMPATIBLE */
