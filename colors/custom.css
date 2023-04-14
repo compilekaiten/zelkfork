@@ -172,6 +172,7 @@
     opacity: 100;
   }
   
+  /* hide sidebar patch */
   :root #vc-spotify-player {
     opacity: 0;
   }
