@@ -68,7 +68,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1440px) {
+@media screen and (min-width: 1080px) and (max-width: 1080px) {
   :root [class*=wordmarkWindows-], :root [class*="winButtonMinMax-"], :root [class*="winButtonClose-"] {
     opacity: 0%;
   }
