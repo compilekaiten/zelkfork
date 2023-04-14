@@ -32,7 +32,7 @@
 
 :root #vc-spotify-player#vc-spotify-player  {
   border-bottom: none;
-  background: var(--spotify-vencord-color);
+  background: linear-gradient(var(--spotify-vencord-color) 20%, var(--bg-overlay-1, var(--background-secondary-alt)));;
 }
 
 :root #vc-spotify-song-title#vc-spotify-song-title,
