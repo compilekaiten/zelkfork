@@ -20,9 +20,6 @@
 @import url('https://discord-custom-covers.github.io/usrbg/snippets/userPopouts.css');
 @import url('https://discord-custom-covers.github.io/usrbg/snippets/modals.css'); */
 
-@import url("https://custom-avatar-hints.github.io/hints/app/database.css");
-@import url("https://custom-avatar-hints.github.io/hints/app/language-hell.css");
-
 /*--------------COLORS---------------*/
 /*------remove / and * to apply------*/
 @import url(https://raw.githubusercontent.com/Onirau/zelkfork/main/colors/blue.css);
@@ -47,8 +44,10 @@
   /* set to '4px solid' to show */
   --embed-color: none;
   /* set to 'Inter', sans-serif !important to use Inter font*/
-  --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  /* --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
+  --font-primary: 'Inter', sans-serif !important;
+  --font-display: 'Inter', sans-serif !important;
   --border-radius-1: 10px;
   --border-radius-2: 8px;
 }
