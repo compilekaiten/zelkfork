@@ -17,6 +17,8 @@
 
 @import url("https://crearts-community.github.io/Settings-Icons/clients/settings-icons.theme.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600;700;900&display=swap');
+
 /*--------------COLORS---------------*/
 /*------remove / and * to apply------*/
 @import url(https://raw.githubusercontent.com/Onirau/zelkfork/main/colors/blue.css);
@@ -43,8 +45,8 @@
   /* set to 'Inter', sans-serif !important to use Inter font*/
   /* --font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
-  --font-primary: 'Inter', sans-serif !important;
-  --font-display: 'Inter', sans-serif !important;
+  --font-primary: 'Fira Sans', sans-serif !important;
+  --font-display: 'Fira Sans', sans-serif !important;
   --border-radius-1: 10px;
   --border-radius-2: 8px;
 }
